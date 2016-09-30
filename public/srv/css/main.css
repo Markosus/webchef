@@ -139,15 +139,7 @@ a:active {
 	color: red;
 }
 
-.btn-primary {
 
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active, {
-	
-} 
 
 
 
@@ -170,10 +162,10 @@ a:active {
 
 	position: relative;
 	top:-54px;
-	right:313px;
+	right:365px;
 }
 
-/* ------------------------------rotating gear --------------------*/
+/* ------------------------------end rotating gear --------------------*/
 
 
 
@@ -183,3 +175,129 @@ a:active {
 
 
 /* ------------------------------end fonts --------------------*/
+
+@font-face {
+
+    font-family: 'bernie';
+    src: url('/fonts/BERNHC.eot');
+    src: url('/fonts/BERNHC.eot?#iefix')
+             format('embedded-opentype'),
+         url('/fonts/BERNHC.woff') format('woff'),
+         url('/fonts/BERNHC.ttf') format('truetype');
+}
+
+@font-face {
+
+    font-family: 'leno';
+    src: url('/fonts/lvnm.eot');
+    src: url('/fonts/lvnm.eot?#iefix')
+             format('embedded-opentype'),
+         url('/fonts/lvnm.woff') format('woff'),
+         url('/fonts/lvnm.ttf') format('truetype');
+}
+
+/*font-family:pagedistrict, "Book Antiqua", Palatino, serif;*/
+
+/* ------------------------------buttons --------------------*/
+
+.btn-primary {
+
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active, {
+	
+} 
+
+
+/* ------------------------------end buttons --------------------*/
+
+
+
+
+/* ------------------------------Pages --------------------*/
+
+	#about h1 {
+
+		font-family:bernie, "Book Antiqua", Palatino, serif;
+		text-align: center;
+		font-size: 35px;
+		color: #bf161c;
+
+	}
+
+	#about h2,
+	p,
+
+	h3 {
+
+		font-family:leno, "Book Antiqua", Palatino, serif;
+		
+	}
+
+	h2 {
+
+		font-size: 30px;
+		text-align: center;
+	}
+
+	h3 {
+
+		font-size: 30px;
+		
+		
+	}
+
+	.innerright ul li {
+		font-family:leno, "Book Antiqua", Palatino, serif;	
+	    padding: 10px;
+	    margin-left: 35px;
+	    list-style-type: disc;
+	    font-size: 21px;
+	}
+
+	p {
+
+		font-size: 21px;
+		margin-right: 100px;
+		margin-left: 100px;
+		line-height: 30px;
+	}
+
+
+
+	.left {
+
+		background-color: #400709;
+		height: 550px;
+	}
+
+	.right {
+		padding-top: 50px;
+		margin-bottom: 50px;
+		background-color: #800f13;
+		height: 550px;
+	}
+
+	.innerright {
+		
+		margin-left: 50px;
+		height: 100px;
+		
+
+	}
+
+
+
+
+/* ------------------------------end Pages --------------------*/
+
+
+
+
+/* ------------------------------about page --------------------*/
+
+
+
+/* ------------------------------end about --------------------*/
