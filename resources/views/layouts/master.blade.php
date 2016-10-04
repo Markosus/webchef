@@ -12,31 +12,7 @@
 
 		<link rel="stylesheet" type="text/css" href="{{ URL::to('srv/css/main.css')}}">
 
-	<script>
-var looper;
-var degrees = 0;
-function rotateAnimation(el,speed){
-	var elem = document.getElementById(el);
-	if(navigator.userAgent.match("Chrome")){
-		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Firefox")){
-		elem.style.MozTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("MSIE")){
-		elem.style.msTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Opera")){
-		elem.style.OTransform = "rotate("+degrees+"deg)";
-	} else {
-		elem.style.transform = "rotate("+degrees+"deg)";
-	}
-	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
-	degrees++;
-	if(degrees > 359){
-		degrees = 1;
-	}
-	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
-}
-</script>	
-		
+
     
 
 	</head>
@@ -47,31 +23,41 @@ function rotateAnimation(el,speed){
 
 			<header>
 				
-				<div id="topbuffer">			
+				<div id="heroimagediv">
+				<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
+					<div class="herotext">
+						<h1>
+	   					 web development, hosting, and projects
+	   					</h1>
+	   					<h3>
+	   					My moto goes right here.
+	   					</h3>
+					</div>
+
+					<div class="menudiv">
+						
+						@include('partials.nav')
+					</div>
+
+
 				</div>
 
-				<div id="gear">
+				
 
-					<img id="img1" src="{{ URL::to('/images/gear2.png')}}">
-					<script>rotateAnimation("img1",75);</script>
-
-
-				</div>
-
-				<div id="logo">
-					
-					<img src="{{ URL::to('/images/logo2.svg')}}" width="350px">
-				</div>
+				
 
 			</header>
 
 
-			@include('partials.nav')
+			
 
-
+			<br>
+		<div id="content">
 			@yield('content')
+		</div>
 
 
+			@include('partials.footer')
 
 		</div> <!-- end page container -->
 		

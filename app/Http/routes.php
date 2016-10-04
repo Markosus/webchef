@@ -8,9 +8,11 @@ Route::auth();
 
 // Route::get('/home', 'HomeController@index');
 
-Route::get('/contact', function(){
+Route::get('/contact', [
+	'uses'=>'contactController@display'
 
-	echo 'test';
+	]
+
 
 });
 
