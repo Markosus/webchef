@@ -1,6 +1,23 @@
+
+
 @include('partials.nav')
 
-<form>
+@if (count($errors))
+	@foreach ($errors->all() as $error)
+		{{ $error }}
+	@endforeach
+@endif
+
+
+<!-- use App\Classes\MathQuestion;
+
+$question = new MathQuestion();    	
+$test->createQuestion(); -->
+
+
+
+
+<form action="/contact" method="POST">
 	
 	<label for="name">Name:</label>
 	<input type="text" name="name">
@@ -17,12 +34,13 @@
 	</textarea>
 
 	<br><br>
-	<label for="question">Question: 5 + 4 =</label>
-	<input type="text" name="email">
+	<label for="question">Question: {{ $question }} =</label>
+	<input type="text" name="questioninput">
 
 	<br><br>
 	<input type="submit" name="submit" value="Send">
 
+	<input type="hidden" name="question" value="{{ $question }}">
 	<input type="hidden" name="_token" value="{{csrf_token()}}">
 
 </form>
