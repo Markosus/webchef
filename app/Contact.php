@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 class Contact {
 
 	public static $rules = [
-		'name'=>'required | max:20',
+		'name'=>'required | max:30',
     	'email' => 'required | email',
     	'message' => 'required',
+    	// 'questioninput' => 'required | integer'
+
 	];
 
 	public static $capthaquestions = array(

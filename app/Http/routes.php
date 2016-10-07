@@ -36,3 +36,15 @@ Route::get('/register',function(){
 
 	return view('/auth.register');
 });
+
+
+
+Route::group(['middleware' =>['admin']],function(){
+
+	Route::get('/admin',function(){
+
+		echo 'you have access';
+
+	});
+
+});
