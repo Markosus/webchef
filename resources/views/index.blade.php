@@ -17,7 +17,7 @@
 
    				<h2>about</h2>	
    				<br>
-   				<h3>Browse 100s of beautiful templates designed for every kind of business. </h3>		
+   				<h3>My background and history in web development </h3>		
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
    				<p class="firstparagraph text-center">
@@ -26,7 +26,7 @@
    				
    				<br><br><br>
    				<h3>Experience and Knowledge</h3>
-	 			<br>
+	 			<br> <img src="/images/lightbulb.svg">
 
 	 				
 

@@ -75,12 +75,12 @@ table {
 
 
 a:link {
-    color: #191919;
+    color: #ac2946;
 }
 
 /* visited link */
 a:visited {
-   color: #191919;
+   color: #ac2946;
 }
 
 
@@ -102,22 +102,24 @@ a:active {
 
 .navbar-default .navbar-nav > li > a  {
 
-	color: #CCCC99;
+	color: #ac2946;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
 
-	color: #CCCC99;
+	color: #ac2946;
 	font-weight: bold;
-	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	background-color: white;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
 
-	color: red;
+	color: #ac2946;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 766px)
@@ -154,10 +156,11 @@ a:active {
 
  #pagecontainer {
 
-	min-height: 1200px;	
+	min-height:100%;
  
   /*background: url(/images/indexbackground4.png)  no-repeat center center; */
-   
+    position:relative;
+    overflow:hidden;
 
   }
 
@@ -166,7 +169,7 @@ a:active {
 
 
  #heroimagediv { 
-  	background: url(/images/background2.jpg)  no-repeat center center;
+  	background: url(/images/back.jpg)  no-repeat center center;
 	width: 100%;
 	height: 100vh;
 
@@ -181,17 +184,69 @@ a:active {
     display: flex;
   	align-items: center;
   	justify-content: center;
+
+
+
  }
+
+
+.headerLine:after {
+content: "";
+position: absolute;
+z-index: 1;
+pointer-events: none;
+top: 0;
+left: 0;
+width: 100%;
+/* height: 240px; */
+/* background: url(../images/sliderL.png) center center no-repeat; */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+border-bottom: 200px solid transparent;
+border-right: 3000px solid white;
+border-top: 60px solid white;
+
+}
+
+
+
+@media only screen and (max-width:1200px)
+ {
+
+	.headerLine:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* height: 240px; */
+	/* background: url(../images/sliderL.png) center center no-repeat; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 300px solid transparent;
+	border-right: 3000px solid white;
+	border-top: 90px solid white;
+	}
+}
+
 
  .herotext h1 {
 
  	text-align: center;
-  	font-family:bernie, "Book Antiqua", Palatino, serif;
-	font-size: 60px;
-	color: #CCCC99;
+  	font-family:quest, "Book Antiqua", Palatino, serif;
+	font-size: 75px;
+	/*color: #CCCC99;*/
+	color: #ffffff;
 	padding-bottom: 8px;
    /* border-bottom: #FFFFFF 1px solid;*/
-			
+	font-weight: bold;
+		
  }
 
   .herotext h3 {
@@ -199,7 +254,8 @@ a:active {
   	font-family:leno, "Book Antiqua", Palatino, serif;
  	text-align: center;
   	font-size: 20px;
-	color: #999966;
+	/*color: #999966;*/
+	color: white;
 	float: right;
 	
 		
@@ -207,13 +263,16 @@ a:active {
 
 .menudiv {
 	position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100px;
+    top: 0px;
+    right: 325px;
+
+    height: 109px;
 	width: 100%;
+	z-index: 1;
+
 	
 
-	background-color: rgba(79, 57, 14, 0.6);
+	/*background-color: rgba(79, 57, 14, 0.6);*/
 
 
 }
@@ -221,9 +280,9 @@ a:active {
 .logo {
 
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	right: 20px;
-
+	z-index: 2;
 }
 
 
@@ -235,7 +294,88 @@ a:active {
 /* ------------------------------End top header index --------------------*/
 
 
+/* ------------------------------page layout --------------------*/
 
+
+/* #headerimage { 
+  	background: url(/images/backgroundcontact.jpg)  no-repeat center center;
+	width: 100%;
+	height: 200px;
+
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position:relative;
+  	
+
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+ }*/
+
+.headerTri {
+	border-top-width: 50px;
+	background: url(/images/sliderL.png)  no-repeat center center;
+	width: 100%;
+	height: 185px;	
+
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position:relative;
+  	
+
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+
+
+
+ #pagelayout .menudiv {
+	position: absolute;
+    top: 0px;
+    right: 325px;
+
+    
+	width: 100%;
+	z-index: 1;
+	
+
+	background-color: rgba(79, 57, 14, 0);
+
+
+}
+
+.contacterrors {
+	font-family:albori, "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+
+	background-color: lightgrey;
+	line-height: 30px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	min-height: 50px;
+	border:1px solid #741618;
+	padding:10px 10px 10px 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+ 	text-align: center;
+  	width: 60%;
+  	color: #741618;
+  	font-weight: bold;
+
+}
+
+
+
+/* ------------------------------end page layout --------------------*/
 
 
 
@@ -299,6 +439,16 @@ a:active {
          url('/fonts/Albori Sans Light.ttf') format('truetype');
 }
 
+@font-face {
+
+    font-family: 'quest';
+    src: url('/fonts/quest.eot');
+    src: url('/fonts/quest.eot?#iefix')
+             format('embedded-opentype'),
+         url('/fonts/quest.woff') format('woff'),
+         url('/fonts/quest.ttf') format('truetype');
+}
+
 /*font-family:pagedistrict, "Book Antiqua", Palatino, serif;*/
 
 /* ------------------------------buttons --------------------*/
@@ -326,7 +476,7 @@ a:active {
 		font-family:bernie, "Book Antiqua", Palatino, serif;
 		text-align: center;
 		font-size: 35px;
-		color: #072D0E;
+		color: #ac2946;
 
 	}
 
@@ -340,14 +490,14 @@ a:active {
 		font-family:albori, "Book Antiqua", Palatino, serif;
 		font-size: 69px;
 		text-align: center;
-		color: #660000;
+		color: #741618;
 	}
 
 	#about h3 {
 		font-family:albori, "Book Antiqua", Palatino, serif;
 		font-size: 30px;
 		text-align: center;
-		color: #702424;
+		color: #9B3336;
 	}
 
 
@@ -375,7 +525,7 @@ a:active {
 		font-family:leno, "Book Antiqua", Palatino, serif;	
 		font-size: 20px;
 		line-height: 30px;
-		color: #666633;
+		color: #426419;
 
 	}
 
@@ -401,7 +551,7 @@ a:active {
 
 	#about table ul li {
 
-		color: #66000e;
+		color: #2E7F2A;
 	}
 
 
@@ -436,7 +586,7 @@ a:active {
 
 	.left {
 
-		height: 550px;
+		height: 150px;
 		color: white;
 
 		
@@ -452,7 +602,7 @@ a:active {
 
 	.right {
 		
-		height: 550px;
+		height: 150px;
 
 		
   	
@@ -471,7 +621,7 @@ a:active {
 
 #content {
 	margin-top: -25px;
-	background: url('/images/pattern2.png') repeat; 
+	/*background: url('/images/pattern2.png') repeat; */
 }
 
 /* ------------------------------end Pages --------------------*/
@@ -486,15 +636,35 @@ a:active {
 /* ------------------------------footer --------------------*/
 
 
+.foot:after {
+content: "";
+position: absolute;
+z-index: 1;
+pointer-events: none;
+bottom: 150px;
+left: 0;
+width: 100%;
+
+/* height: 240px; */
+/* background: url(../images/sliderL.png) center center no-repeat; */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+border-bottom:-100px solid transparent;
+border-right: 2000px solid #741618;
+border-top: 75px solid transparent;
+
+}
 
 #footer {
-
+	margin-top: 150px;
 	width: 100%;
-	height: 200px;
-	background-color: #362120;
-	position: relative;
+	height: 150px;
+	background-color: #741618;
+	position: static;/* Updated Property */
 	bottom: 0px;
-	line-height: 200px;
+	line-height: 150px;
 
 	
 	
@@ -524,10 +694,246 @@ a:active {
 	
     padding: 16px;
     text-decoration: none;
-    color: #CCCC99;	
+    color: white;	
 }
 
 
 
 
 /* ------------------------------end footer --------------------*/
+
+
+
+/* ------------------------------Navigation bar for page layout --------------------*/
+
+#pagelayout .navbar .navbar-default {
+    display: inline-block;
+    float: none;
+    text-decoration: none;
+    font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-size: 18px;
+
+
+}
+
+/*.navbar .navbar-collapse {
+    text-align: center;
+}*/
+
+
+#pagelayout .navbar .navbar-collapse {
+
+    text-align: right;
+}
+
+
+
+#pagelayout a:link {
+    color: #FFFFFF;
+}
+
+/* visited link */
+#pagelayout a:visited {
+   color: #FFFFFF;
+}
+
+
+
+/* selected link */
+#pagelayout a:active {
+     color: #FFFFFF;
+}
+
+#pagelayout .navbar-default {
+  border:none;
+  background-color: transparent;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+
+
+}
+
+#pagelayout .navbar-default .navbar-nav > li > a  {
+
+	color: #FFFFFF;
+}
+
+#pagelayout .navbar-default .navbar-nav > .active > a,
+#pagelayout .navbar-default .navbar-nav > .active > a:focus,
+#pagelayout .navbar-default .navbar-nav > .active > a:hover {
+
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pagelayout .navbar-default .navbar-nav > li > a:focus,
+#pagelayout .navbar-default .navbar-nav > li > a:hover {
+
+	color: red;
+}
+
+@media only screen and (max-width: 766px)
+ {
+
+	.collapsing, .in {
+
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+
+	.collapsing ul li a, .in ul li a {
+
+		color: #555!important;
+	}
+
+	.collapsing ul li a:hover, .in ul li a:hover {
+
+		color: #f1f1f1!important;
+	}
+}
+
+
+
+
+
+
+
+
+/* ------------------------------End Navigation bar --------------------*/
+
+
+/* ------------------------------forms --------------------*/
+
+.centerform{
+	
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 800px;
+}
+
+label {
+	font-family:albori, "Book Antiqua", Palatino, serif;
+	font-size: 23px;
+	color: #702424;
+
+    display:inline-block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 25px;
+
+    
+}
+
+input[type="text"] {
+	font-family:albori, "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+	float: right;
+	padding: 5px;
+    margin-top: -7px;
+    display:inline-block; 
+   
+    width: 65%;
+    max-width: 550px;
+    height: 35px;
+
+    background-color: lightgrey;
+	border:1px solid lightgrey;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+
+	
+
+}
+
+.block {
+
+
+}
+
+
+
+textarea {
+	font-family:albori, "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+	padding: 10px 5px 10px 5px;
+    display:inline-block; 
+    
+    float: right;
+    margin-top: -7px;
+    width: 65%;
+    max-width: 550px;
+    height: 200px;
+
+    background-color: lightgrey;
+	border:1px solid lightgrey;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+
+
+
+
+}
+
+.btn-default{
+   display:inline-block; 
+   
+ 
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  float: right;
+
+
+}
+
+.btn-default:hover {
+
+	background-color: #702424;
+	color: white;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #702424;
+	box-shadow: 0 0 5px rgba(112, 36, 36, 1);
+	
+
+-webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1200px)
+ {
+ 	input[type="text"], textarea {
+	
+    	width: 100%; 
+    	margin-top: 5px;
+
+	}
+
+	.btn-default{
+
+		
+	}
+
+	
+}
+
+
+ }
+
+
+/* ------------------------------End forms --------------------*/

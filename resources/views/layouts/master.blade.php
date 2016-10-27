@@ -22,17 +22,20 @@
 		<div id="pagecontainer">
 
 			<header>
-				
+
+				<div class="headerLine"></div>
 				<div id="heroimagediv">
 				<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
 					<div class="herotext">
 						<h1>
-	   					 web development, hosting, and projects
+	   					 web design, hosting, and projects
 	   					</h1>
 	   					<h3>
 	   					My moto goes right here.
 	   					</h3>
 					</div>
+				
+				
 
 					<div class="menudiv">
 						

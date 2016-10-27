@@ -1,5 +1,8 @@
+
 <footer>
-		
+
+	<div class="foot"></div>
+	
 	<div id="footer">
 
 		<ul class="footer">

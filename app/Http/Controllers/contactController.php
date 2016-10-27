@@ -54,9 +54,11 @@ class contactController extends Controller
 
 
     	if ($this->messages->count()){
+
+    		
     			
 			return redirect('/contact')
-				->withInput()
+				->withInput($request->input())
 				->withErrors($this->messages);
 
 		} else {
