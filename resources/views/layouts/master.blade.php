@@ -27,12 +27,14 @@
 				<div id="heroimagediv">
 				<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
 					<div class="herotext">
-						<h1>
-	   					 web design, hosting, and projects
-	   					</h1>
-	   					<h3>
-	   					My moto goes right here.
+						<h3>
+	   					Welcome to Webchef.
 	   					</h3>
+	   					<br>
+						<h1>
+	   					 web design,<br> hosting,<br> and projects
+	   					</h1>
+	   				
 					</div>
 				
 				

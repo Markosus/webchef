@@ -14,12 +14,15 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse navbar-background" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-        <li class="active navbar-background ">
-            <a href="{{ URL::to('/')}}" class="navbar-background">About Author </a>
+         <li{!! (Request::is('/')) ? ' class="active"' : '' !!}>
+            <a href="{{ URL::to('/')}}" >About Author </a>
         </li>
-        <li><a href="#">My Work</a></li>
+        
+        <li {!! (Request::is('/mywork')) ? ' class="active" ' : '' !!}}><a href="{{ URL::to('mywork') }}">My Work</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="{{ URL::to('contact')}}">Contact</a></li>
+
+        <li{!! (Request::is('contact')) ? ' class="active"' : '' !!}><a href="{{ URL::to('contact')}}">Contact</a></li>
+
         <li><a href="#">Register</a></li>
        <!--  <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>

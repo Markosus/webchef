@@ -1,5 +1,4 @@
-@extends('layouts.pagelayout')
-<!-- @extends('layouts.pagelayout',['title' => 'Your Title Goes Here']) -->
+@extends('layouts.pagelayout',['title' => 'pagetitle'])
 
 @section('content')
 

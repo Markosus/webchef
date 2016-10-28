@@ -8,15 +8,23 @@ Route::auth();
 
 // Route::get('/home', 'HomeController@index');
 
-Route::get('/contact', [
-	'uses'=>'contactController@display',
+// Route::get('/contact', [
+// 	'uses'=>'contactController@display',
 
-]);
+// ]);
+
+Route::get('/contact', 'contactController@display');
 
 Route::post('/contact', [
 	'uses'=>'contactController@isValid',
 
 ]);
+
+Route::get('/mywork', function(){
+
+	return view('/mywork');
+
+});
 
 
 

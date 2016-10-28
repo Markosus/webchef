@@ -12,6 +12,28 @@
 
 	</head>
 
+	<style type="text/css">
+			.headerTri {
+	border-top-width: 50px;
+	background: url(/images/{{ $headerimage }})  no-repeat center center;
+	width: 100%;
+	height: 185px;	
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position:relative;
+  	
+
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+	</style>
+
 <BODY>
 
 <div id="pagelayout">
@@ -36,7 +58,7 @@
 
 		<div id="content">
 
-				
+
 				@yield('content')
 				
 		</div>
