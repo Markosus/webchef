@@ -83,6 +83,7 @@
 					<img  src="/images/portrait.png">
 
 					<div class="vcenter">
+						
 						<h3 style="text-align:left;">Beautifully designed sites. </h3>
 						<br>
 						<p>

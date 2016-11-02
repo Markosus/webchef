@@ -27,9 +27,11 @@
 				<div id="heroimagediv">
 				<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
 					<div class="herotext">
+
 						<h3>
-	   					Welcome to Webchef.
+	   					Thanks for dropping by WebChef.ca
 	   					</h3>
+	   					<hr style="background-color: #ffffff; width: 50%; height: 2px; border: none;">	
 	   					<br>
 						<h1>
 	   					 web design,<br> hosting,<br> and projects

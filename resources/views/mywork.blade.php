@@ -18,50 +18,35 @@
 
    				<h2>my work</h2>	
    				<br>
-   				<h3>Need a website? Get in touch with me. </h3>		
+   				<h3>Here our a few samples of my work. </h3>	
+   				<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">		
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
    				<p class="firstparagraph text-center">
-   					Im a independant, freelance web developer. My experience is primarily with back-end development. I do dive into the front-end of web design here and there using Adobe Photoshop and Illustrator.
+   					I've created more sites through out the years. But now 
    				</p>
 
    				<div class="thumbnail-container">
    					
-   					<a href="" class="thumb-unit">
+   					<a href="" class="thumb-unit" style="background: url('/images/mywork/liberated.PNG') center center no-repeat;">
    						<div class="boxoverlay">
    							<strong>Liberated Living</strong>
+   							<p>Designed with wordpress.</p>
    							<div class="iconplaceholder"></div>
 
    						</div>
 					</a>
 
-						<a href="" class="thumb-unit">
+						<a href="" class="thumb-unit" style="background: url('/images/mywork/graceful.PNG') center center no-repeat;">
    						<div class="boxoverlay">
-   							<strong>Liberated Living</strong>
+   							<strong>Graceful Angels</strong><p>Designed with wordpress.</p>
    							<div class="iconplaceholder"></div>
 
    						</div>
 					</a>
 
-					</a>
 
-						<a href="" class="thumb-unit">
-   						<div class="boxoverlay">
-   							<strong>Liberated Living</strong>
-   							<div class="iconplaceholder"></div>
 
-   						</div>
-					</a>
-
-					</a>
-
-						<a href="" class="thumb-unit ">
-   						<div class="boxoverlay">
-   							<strong>Liberated Living</strong>
-   							<div class="iconplaceholder"></div>
-
-   						</div>
-					</a>
 
 
    						

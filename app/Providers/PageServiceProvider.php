@@ -14,6 +14,7 @@ class PageServiceProvider extends ServiceProvider
      */
 
     protected $headerimage;
+    protected $headertext;
 
     public function boot()
     {
@@ -21,11 +22,13 @@ class PageServiceProvider extends ServiceProvider
         
         switch ($url) {
             case 'contact':
-                $this->headerimage = 'sliderL.png';
+                $this->headerimage = 'contact.png';
                 break;
+              
 
             case 'mywork':
-                $this->headerimage = 'sliderL.png';
+                $this->headerimage = 'portfolio.jpg';
+                $this->headertext = 'beautiful design';
                 break;
             
             default:
@@ -37,6 +40,7 @@ class PageServiceProvider extends ServiceProvider
 
         view()->composer('layouts.pagelayout',function($view){
             $view->with('headerimage', $this->headerimage);
+            $view->with('headertext', $this->headertext);
         });
     }
 

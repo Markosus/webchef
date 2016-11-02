@@ -55,10 +55,10 @@ table {
 .navbar-default {
     display: inline-block;
     float: none;
-    text-decoration: none;
     font-family:leno, "Book Antiqua", Palatino, serif;
     font-size: 15px;
     font-weight: 600;
+    text-transform: uppercase;
 
 
 
@@ -116,16 +116,35 @@ a:active {
 	color: #ac2946;
 	font-weight: bold;
 	background-color: transparent;
+
+
+	
 	/* background: rgba(0,0,0,0.0);*/
 
 }
+
 
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
 
 	color: #ac2946;
 	
+		
 }
+ /*underline*/
+.navbar-default .navbar-nav > li > a:hover::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  display: inline-block;
+  height: 1em;
+  width: 80%;
+  border-bottom: 2px solid #ac2946;
+  margin-top: 10px;
+  float: right;
+}
+
+
 
 @media only screen and (max-width: 766px)
  {
@@ -326,7 +345,7 @@ border-top: 60px solid white;
 		font-family:albori, "Book Antiqua", Palatino, serif;
 		font-size: 69px;
 		text-align: center;
-		color: #741618;
+		color: black;
 	}
 
 
@@ -554,7 +573,7 @@ border-top: 60px solid white;
 
 		width: 75%;	
 		margin:auto;	
-			
+		padding-top: 50px;	
 
 
 	}
@@ -563,8 +582,10 @@ border-top: 60px solid white;
 
 		float: left;
 		margin-right: 25px;
-		margin-bottom: 75px;
+		margin-bottom: 25px;
 		width: 300px;
+		position: relative;
+		top: -30px;
 		
 
 	}
@@ -659,14 +680,15 @@ border-top: 60px solid white;
 
 .thumbnail-container {
 	width: 100%;
-	min-height: 600px;
+	
 	
 	display: -webkit-flex;
 	display: flex;
   	flex-flow: row wrap;	
   	justify-content: center;
   	/*align-content: space-between;*/
-
+  	margin-top: 75px;
+  	margin-bottom: 175px;
 
 }
 
@@ -681,15 +703,15 @@ border-top: 60px solid white;
 	
 	width: 45%;
 	min-width: 300px;
-	padding-top: 20%;
-	margin: 1px;
-	
+	/*padding-top: 20%;*/
+	margin: 3px;
+	min-height: 400px;
 	
 	background-color: red;
 	display: block;
 	position: relative;
 	float: left;
-	background: url('/images/back1.jpg') center center no-repeat;
+	/*background: url('/images/back1.jpg') center center no-repeat;*/
 	overflow: hidden;
 
 
@@ -705,7 +727,8 @@ border-top: 60px solid white;
 
 	.thumb-unit {
 		width: 80%;
-		padding-top: 40%;
+		/*padding-top: 20%;*/
+		min-height: 250px;
 	}
 
 
@@ -724,10 +747,8 @@ border-top: 60px solid white;
 	height: 100%;
 	
     transition: 0.5s;
-    background-color:rgba(24, 24, 24, 0.9);
+    background-color:rgba(116, 22, 24, 0.95);
     text-align: center;
-
-
 
 }
 
@@ -755,11 +776,16 @@ border-top: 60px solid white;
 .boxoverlay strong {
 
 	display: inline-block;
-	padding-top: 40px;
-	font-size: 20px;
+	padding-top: 60px;
+	font-size: 35px;
 	color: white;
 	font-family:albori, "Book Antiqua", Palatino, serif;
 	font-weight: 300;
+}
+
+.boxoverlay p {
+	margin-top: 20px;
+	color: white;
 }
 
 

@@ -1,25 +1,30 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<title>
+		
+		</title>	
 
-						
-		</title>
+		
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<link rel="stylesheet" type="text/css" href="{{ URL::to('srv/css/main.css')}}">
 
+
+    
+
 	</head>
 
-	<style type="text/css">
-			.headerTri {
-	border-top-width: 50px;
-	background: url(/images/{{ $headerimage }})  no-repeat center center;
+<style type="text/css">
+ #pageimagediv { 
+  	background: url(/images/{{ $headerimage }})  no-repeat center center;
 	width: 100%;
-	height: 185px;	
+	height: 500px;
+	
 
-    -webkit-background-size: cover;
+	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -30,50 +35,61 @@
     display: flex;
   	align-items: center;
   	justify-content: center;
-}
 
-	</style>
 
-<BODY>
 
-<div id="pagelayout">
-	<div id='pagecontainer'>
+ }
 
-		 <header>
+</style>
 
-		 <div class="headerTri">
+	<body>
 
-		 	<div class="menudiv">
+		<div id="pagecontainer">
+
+			<header>
+
+				<div class="headerLine"></div>
+				<div id="pageimagediv">
+				<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
+					<div class="herotext">
+
+						<!-- <h3>
+	   					Thanks for dropping by WebChef.ca
+	   					</h3>
+	   					<hr style="background-color: #ffffff; width: 50%; height: 2px; border: none;">	
+	   					<br> -->
+
+						<h1 style="margin-top:100px;">
+	   					{{ $headertext }}
+	   					</h1>
+	   				
+					</div>
+				
+				
+
+					<div class="menudiv">
 						
 						@include('partials.nav')
-			</div>
-			<img class="logo" src="{{ URL::to('/images/logo5.svg')}}">
-		 	
-		 </div> <!-- end headerTri -->
-    	
- 		 </header>
+					</div>
+
+
+				</div>
+
+				
+
+				
+
+			</header>
 
 
 			
 
+			<br>
 		<div id="content">
-
-
-				@yield('content')
-				
+			@yield('content')
 		</div>
-		
-		@include('partials.footer')
 
 
-	</div>
-</div>
+			@include('partials.footer')
 
-</BODY>
-
-<!-- JavaScripts -->
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="{{ URL::to('srv/js/jquery.min.js') }}"></script> -->
-    <script type='text/javascript' src="{{ URL::to('srv/js/bootstrap.js') }}"></script>
-
-</html>
+		</div> <!-- end page container -->

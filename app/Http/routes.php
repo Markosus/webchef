@@ -28,11 +28,6 @@ Route::get('/mywork', function(){
 
 
 
-Route::get('/register', function(){
-
-	echo 'test';
-
-});
 
 Route::get('/login',function(){
 
