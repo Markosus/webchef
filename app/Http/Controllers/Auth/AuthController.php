@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Http\Request;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Auth;
+
 
 class AuthController extends Controller
 {
@@ -37,7 +40,10 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        // $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+
+        //$this->middleware('guest', ['except' => ['getLogout', 'create'] ]);
+
     }
 
     /**
@@ -52,6 +58,7 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
+            'website' => 'required',
         ]);
     }
 
@@ -63,10 +70,40 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+       User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'location' =>$data['location'],
+            'telephone' => $data['telephone'],
             'password' => bcrypt($data['password']),
         ]);
+
+// Auth::create(['name' => $request->name , 'email' => $request->email, 'password' => $request->password]);
+
+//     return redirect()->route('accounts')
+//         ->with('message', 'New user added successfully!')
+//         ->with('type', 'alert-success');
+
     }
+
+
+
+
+public function register(Request $request) //disables auto login
+{
+    $validator = $this->validator($request->all());
+
+    if ($validator->fails()) {
+        $this->throwValidationException(
+            $request, $validator
+        );
+    }
+
+    $this->create($request->all());
+
+    return redirect($this->redirectPath());
 }
+
+}
+
+

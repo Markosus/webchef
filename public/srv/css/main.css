@@ -869,110 +869,8 @@ border-top: 75px solid transparent;
 
 
 
-/* ------------------------------Navigation bar for page layout --------------------*/
-
-#pagelayout .navbar-default {
-
-    display: inline-block;
-    float: none;
-    text-decoration: none;
-    font-family:leno, "Book Antiqua", Palatino, serif;
-    font-size: 15px;
-    font-weight: 600;
 
 
-}
-
-
-}
-
-/*.navbar .navbar-collapse {
-    text-align: center;
-}*/
-
-
-#pagelayout .navbar .navbar-collapse {
-
-    text-align: right;
-}
-
-
-
-#pagelayout a:link {
-    color: black;
-}
-
-/* visited link */
-#pagelayout a:visited {
-  color: black;
-}
-
-
-
-/* selected link */
-#pagelayout a:active {
-    color: black;
-}
-
-#pagelayout .navbar-default {
-  border:none;
-  background-color: transparent;
-   position: absolute;
-   bottom: 0;
-   right: 0;
-
-
-}
-
-#pagelayout .navbar-default .navbar-nav > li > a  {
-
-	color: red;
-}
-
-
-
-#pagelayout .navbar-default .navbar-nav > .active > a,
-#pagelayout .navbar-default .navbar-nav > .active > a:focus,
-#pagelayout .navbar-default .navbar-nav > .active > a:hover {
-
-	color: #FFFFFF;
-	font-weight: bold;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
-#pagelayout .navbar-default .navbar-nav > li > a:focus,
-#pagelayout .navbar-default .navbar-nav > li > a:hover {
-
-	color: red;
-}
-
-@media only screen and (max-width: 766px)
- {
-
-	.collapsing, .in {
-
-		background-color: rgba(255, 255, 255, 0.9);
-	}
-
-	.collapsing ul li a, .in ul li a {
-
-		color: #555!important;
-	}
-
-	.collapsing ul li a:hover, .in ul li a:hover {
-
-		color: #f1f1f1!important;
-	}
-}
-
-
-
-
-
-
-
-
-/* ------------------------------End Navigation bar --------------------*/
 
 
 /* ------------------------------forms --------------------*/
@@ -998,7 +896,7 @@ label {
     
 }
 
-input[type="text"] {
+input[type="text"],input[type="email"],input[type="password"] {
 	font-family:albori, "Book Antiqua", Palatino, serif;
 	font-size: 20px;
 	float: right;
@@ -1052,7 +950,7 @@ textarea {
 
 }
 
-.btn-default{
+/*.btn-default{
    display:inline-block; 
    
  
@@ -1072,6 +970,58 @@ textarea {
 
 	background-color: #702424;
 	color: white;
+	
+
+}*/
+
+
+
+/* Radial Out */
+.btn-default {
+	  height: 40px;
+  	width: 100px;
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  float: right;
+
+}
+.btn-default:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #702424;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  color: white;
+}
+
+.btn-default:hover:before, .btn-default:focus:before, .btn-default:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  
 }
 
 input:focus,
@@ -1084,12 +1034,17 @@ textarea:focus {
   -moz-transition: all 0.15s ease-in-out;
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
+
+
+
 }
+
+
 
 
 @media only screen and (max-width: 1200px)
  {
- 	input[type="text"], textarea {
+ 	input[type="text"],input[type="email"],input[type="password"], textarea {
 	
     	width: 100%; 
     	margin-top: 5px;
@@ -1105,7 +1060,26 @@ textarea:focus {
 }
 
 
- }
+
 
 
 /* ------------------------------End forms --------------------*/
+
+
+
+/*------------  Bootstrap overwrite --------*/
+
+.panel-default > .panel-heading {
+
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c8c8c8;
+
+   
+}
+
+.panel-default {
+
+	border: 1px solid #c8c8c8;
+}
+
+/*-------------  End Bootstrap overwrite ---------*/

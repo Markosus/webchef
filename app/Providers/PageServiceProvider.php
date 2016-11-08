@@ -26,13 +26,21 @@ class PageServiceProvider extends ServiceProvider
                 break;
               
 
-            case 'mywork':
+            case 'myprojects':
                 $this->headerimage = 'portfolio.jpg';
                 $this->headertext = 'beautiful design';
                 break;
-            
+            case 'portfolioliberated':
+                $this->headerimage = 'defaultback.jpg';
+                $this->headertext = 'portfolio';
+                break;
+            case'portfoliograceful':
+                $this->headerimage = 'defaultback.jpg';
+                $this->headertext = 'portfolio';
+            break;
             default:
-                # code...
+                $this->headerimage = 'portfolio.jpg';
+                $this->headertext = 'beautiful design';
                 break;
         }
 

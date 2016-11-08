@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.pagelayout')
 
 @section('content')
 <div class="container">
@@ -13,8 +13,8 @@
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+                            <div class="col-md-6" >
+                                <input id="email" type="email" name="email" value="{{ old('email') }}" style="width:100%;">
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -28,7 +28,7 @@
                             <label for="password" class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
+                                <input id="password" type="password" name="password" style="width:100%;">
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -50,7 +50,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-default">
                                     <i class="fa fa-btn fa-sign-in"></i> Login
                                 </button>
 

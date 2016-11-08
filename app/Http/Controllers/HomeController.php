@@ -13,8 +13,10 @@ class HomeController extends Controller
      * @return void
      */
     public function __construct()
+
     {
-        $this->middleware('auth');
+        //this will make it so the homecontroller needs to be authenticated
+        //$this->middleware('auth');
     }
 
     /**
@@ -24,6 +26,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('index');
     }
 }

@@ -16,7 +16,7 @@
    				<br><br>
    				<br>
 
-   				<h2>my work</h2>	
+   				<h2>selected works</h2>	
    				<br>
    				<h3>Here our a few samples of my work. </h3>	
    				<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">		
@@ -28,7 +28,7 @@
 
    				<div class="thumbnail-container">
    					
-   					<a href="" class="thumb-unit" style="background: url('/images/mywork/liberated.PNG') center center no-repeat;">
+   					<a href="{{ URL::to('portfolioliberated')}}" class="thumb-unit" style="background: url('/images/mywork/liberated.PNG') center center no-repeat;">
    						<div class="boxoverlay">
    							<strong>Liberated Living</strong>
    							<p>Designed with wordpress.</p>
@@ -37,7 +37,7 @@
    						</div>
 					</a>
 
-						<a href="" class="thumb-unit" style="background: url('/images/mywork/graceful.PNG') center center no-repeat;">
+						<a href="{{URL::to('/portfoliograceful')}}" class="thumb-unit" style="background: url('/images/mywork/graceful.PNG') center center no-repeat;">
    						<div class="boxoverlay">
    							<strong>Graceful Angels</strong><p>Designed with wordpress.</p>
    							<div class="iconplaceholder"></div>
