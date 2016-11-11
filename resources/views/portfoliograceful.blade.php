@@ -19,14 +19,15 @@
 
 			<h2 style="font-size:25px;">Graceful Angels</h2>	
    				<br>
-   				<h3>Visit Site</h3>	
+   				<h3><a href="http://www.gracefulangels.ca" target=
+               "new">Visit Site</h3></a>	
    				<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">		
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
    		</div>		
 
    		<div class="col-md-8 col-md-offset-2"  >	
-   				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has </p>
+   				<p>Graceful Angels was another site of mine with the layout and design built from the ground up. Some technologies used in the creation are JavaScript, MySQL,  and Photoshop/Illustrator.  I  took advantage of some of Jquery's subtle effects to float or fade in some of the pages elements as the page is being loaded. Also I incorporated a floating menu header for easier navigation. </p>
    		
 
    		</div>
@@ -42,7 +43,7 @@
    					
    				<br><br>
 
-   				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has </p>
+   				<p>Wordpress was chosen for this project mainly due to the pre-existing content management system and to take advantage of some of the plug-ins already made.</p>
          </div>
 
       <div class="col-md-12 text-center">

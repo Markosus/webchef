@@ -35,11 +35,23 @@
 
 				<tr>
 					<td>Website Creation:</td>
-					<td>$500.00</td>
+					<td>
+					<!-- @if (isset($userprofile->userbalance->hosting))
+
+						{{ $userprofile->userbalance->hosting }}
+
+					@endif  -->
+
+					{{ isset($userprofile->userbalance->website_creation) ? $userprofile->userbalance->website_creation : "Not available" }}
+
+
+					</td>
 				</tr>
 				<tr>
 					<td>Hosting (Semi Annually):</td>
-					<td>$50.00</td>
+					<td>
+					 {{ isset($userprofile->userbalance->hosting) ? $userprofile->userbalance->hosting : 'Not available' }}
+					</td>
 				</tr>
 			</table>
 

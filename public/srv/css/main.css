@@ -992,7 +992,7 @@ textarea {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   float: right;
-
+  
 }
 .btn-default:before {
   content: "";
@@ -1021,7 +1021,6 @@ textarea {
 .btn-default:hover:before, .btn-default:focus:before, .btn-default:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  
 }
 
 input:focus,

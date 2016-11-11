@@ -47,9 +47,10 @@ class adminController extends Controller
 
     public function viewClient($id){
 
-    	$useraccount = User::where('id','=',$id)->first();
+    	//$useraccount = User::where('id','=',$id)->first();
     	// $useraccount = User::find($id);
     	//echo $useraccount->name;
+        $useraccount = User::findOrFail($id);
 
     	return view('admin.admin_clientprofile',[
 

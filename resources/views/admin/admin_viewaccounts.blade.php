@@ -16,7 +16,7 @@
 	
 					@foreach ($clients as $client)
 
-						<li><a href="/users/{{ $client->id }}">{{ $client->name }}</a>
+						<li><a href="/user/{{ $client->id }}">{{ $client->name }}</a>
 						  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
 						<br></li>
 
