@@ -22,7 +22,7 @@
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
    				<p class="firstparagraph text-center">
-   					Im a independant, freelance web developer. My experience is primarily with back-end development. I do dive into the front-end of web design here and there using Adobe Photoshop and Illustrator.
+   					Please feel free to contact me if you have any questions. Thanks Ill get back to you as possible.
    				</p>
    				
    				
