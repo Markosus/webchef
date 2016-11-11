@@ -28,7 +28,7 @@
 
    				<div class="thumbnail-container">
    					
-   					<a href="{{ URL::to('portfolioliberated')}}" class="thumb-unit" style="background: url('/images/mywork/liberated.PNG') center center no-repeat;">
+   					<a href="{{ URL::to('portfolioliberated')}}" class="thumb-unit" style="background: url('/images/mywork/liberated.png') center center no-repeat;">
    						<div class="boxoverlay">
    							<strong>Liberated Living</strong>
    							<p>Designed with wordpress.</p>
@@ -37,7 +37,7 @@
    						</div>
 					</a>
 
-						<a href="{{URL::to('/portfoliograceful')}}" class="thumb-unit" style="background: url('/images/mywork/graceful.PNG') center center no-repeat;">
+						<a href="{{URL::to('/portfoliograceful')}}" class="thumb-unit" style="background: url('/images/mywork/graceful.png') center center no-repeat;">
    						<div class="boxoverlay">
    							<strong>Graceful Angels</strong><p>Designed with wordpress.</p>
    							<div class="iconplaceholder"></div>
