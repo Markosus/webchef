@@ -34,7 +34,7 @@
 
          <div class="col-md-12 text-center">
 
-   			<img src="/images/mywork/gracefullarge1.png" width="950" style="margin:50px 0 50px 0;border:1px solid lightgrey; border-radius:15px;">
+   			<img class="portimg" src="/images/mywork/gracefullarge1.png">
 			</div>
 		
 
@@ -48,7 +48,7 @@
 
       <div class="col-md-12 text-center">
                
-   				<img src="/images/mywork/gracefullarge2.png" width="950" style="margin:50px 0 50px 0; border:1px solid lightgrey; border-radius:15px;" ">
+   				<img class="portimg" src="/images/mywork/gracefullarge2.png">
 
 		</div>
 		

@@ -1082,3 +1082,12 @@ textarea:focus {
 }
 
 /*-------------  End Bootstrap overwrite ---------*/
+
+.portimg {
+
+	margin:50px 0 50px 0;
+	border:1px solid lightgrey; 
+	border-radius:15px;
+	width: 90%;
+	height:auto;
+}
