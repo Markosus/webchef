@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-default navbar-background">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-background">
      
       <div class="navbar-header navbar-background">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -14,7 +14,7 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 
 <div class="collapse navbar-collapse navbar-background" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-right ">
          <li{!! (Request::is('/')) ? ' class="active"' : '' !!}>
             <a href="{{ URL::to('/')}}" >About Author </a>
         </li>

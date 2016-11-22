@@ -53,12 +53,24 @@ table {
 /* ------------------------------Navigation bar --------------------*/
 
 .navbar-default {
-    display: inline-block;
+	 border:none;
+ 	 background-color: transparent;
+
+   /* display: inline-block;*/
     float: none;
     font-family:leno, "Book Antiqua", Palatino, serif;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    position: absolute;
+    top: 44px;
+    
+
+   
+
+
+   
+
 
 
 
@@ -90,16 +102,6 @@ a:visited {
 /* selected link */
 a:active {
      color: blue;
-}
-
-.navbar-default {
-  border:none;
-  background-color: transparent;
-   position: absolute;
-   bottom: -3px;
-   right: 0;
-
-
 }
 
 .navbar-default .navbar-nav > li > a  {
@@ -149,19 +151,34 @@ a:active {
 @media only screen and (max-width: 766px)
  {
 
+ 	.navbar-default {
+	border:none;
+    position: absolute;
+    top: 44px;
+    right: -20px;
+    
+
+
+}
+
 	.collapsing, .in {
 
 		background-color: rgba(255, 255, 255, 0.9);
+		
 	}
 
 	.collapsing ul li a, .in ul li a {
 
 		color: #555!important;
+		
+
 	}
 
 	.collapsing ul li a:hover, .in ul li a:hover {
 
-		color: #f1f1f1!important;
+		color: #ac2946!important;
+
+
 	}
 }
 
@@ -1088,6 +1105,6 @@ textarea:focus {
 	margin:50px 0 50px 0;
 	border:1px solid lightgrey; 
 	border-radius:15px;
-	width: 85%;
+	width: 90%;
 	height:auto;
 }
