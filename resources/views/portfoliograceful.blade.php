@@ -51,7 +51,6 @@
    				<img class="portimg" src="/images/mywork/gracefullarge2.png">
 
 		</div>
-		<!-- //here is a change. -->
 		
 	</div>
 	
