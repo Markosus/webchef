@@ -155,11 +155,18 @@ a:active {
 	border:none;
     position: absolute;
     top: 44px;
-    right: -20px;
+    right: -27px;
     
 
 
 }
+	
+.navbar-collapse{
+  left:200px !important;
+  position:relative;
+
+}
+
 
 	.collapsing, .in {
 
@@ -170,6 +177,7 @@ a:active {
 	.collapsing ul li a, .in ul li a {
 
 		color: #555!important;
+
 		
 
 	}
