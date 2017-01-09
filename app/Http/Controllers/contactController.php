@@ -8,7 +8,6 @@ use App\Http\Requests;
 use App\Classes\MathQuestion;
 use App\Contact;
 use Mail;
-use Redirect;
 
 
 class contactController extends Controller
@@ -19,7 +18,6 @@ class contactController extends Controller
 
 	public function __construct(){
 
-   
 
 	}
 
@@ -100,22 +98,8 @@ class contactController extends Controller
 
    		 });
 
-    
-     $this->success();
-           
-    }
-
-
-    public function success(){
-
-    
-
-      notify()->flash("Email Sent.", "success");
-
-      //return redirect('/');
-      //return Redirect::to('/')
-      Redirect::to('/')->send(); //the other redirect werent redirecting
-      
+    	
+    	echo "Email Successfully sent";
 
     }
 

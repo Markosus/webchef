@@ -61,8 +61,3 @@ Route::group(['middleware' => ['auth']], function(){  //regular user
 
 	});
 });
-
-// Route::get('/notify',function(){  this is taken care of in the contact controller
-// 	notify()->flash("Good job!", "success");
-// 	return redirect('/');
-// });
