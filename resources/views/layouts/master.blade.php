@@ -10,11 +10,14 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" >
 
 		<link rel="stylesheet" type="text/css" href="{{ URL::to('srv/css/main.css')}}">
-
+		<link rel="stylesheet" type="text/css" href=" {{ URL::to('srv/css/sweetalert.css') }}">
 
     
 
 	</head>
+
+
+
 
 	<body>
 
@@ -80,6 +83,22 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="{{ URL::to('srv/js/jquery.min.js') }}"></script> -->
     <script type='text/javascript' src="{{ URL::to('srv/js/bootstrap.js') }}"></script>
+
+    <script type="text/javascript" src="{{ URL::to('srv/js/sweetalert.min.js') }}"></script>
+
+      <script type="text/javascript">
+    	
+    	@if (notify()->ready())
+	    	swal({
+
+	    		title: "{!! notify()->message() !!}",
+	    		text: "I'll get back to you as soon as I can",
+	    		type: "{{ notify()->type() }}"
+
+	    	});
+	    @endif
+
+    </script>
     
 
 </html>

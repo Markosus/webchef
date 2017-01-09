@@ -156,6 +156,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\PageServiceProvider::class,
+        Codecourse\Notify\NotifyServiceProvider::class,
 
     ],
 
