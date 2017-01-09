@@ -22,8 +22,16 @@
 	   				<!-- <h3 class="text-center">A little bit about myself</h3> -->
 	   				<br><br>
 	   				<p class="firstparagraph text-center">
-	   					Im an independant, freelance web developer. My experience is primarily with back-end development. I do dive into the front-end of web design here and there using Adobe Photoshop and Illustrator.
+	   					I'm currently an independent, freelance web developer. I've been creating sites on and off for over 15 years now. My experience is both with front-end and back-end web development.  I dive into graphic design here and there using Adobe Photoshop and Illustrator which complement  the web design creation process.
 	   				</p>
+
+	   		<!-- 		@if (notify()->ready(0))
+
+	   						<div class="alert alert-{{ notify()->type() }}">
+	   							{{ notify()->message() }}
+	   						</div>
+
+	   				@endif -->
 	   				
 	   				</div> <!-- end col -->
 
@@ -87,7 +95,7 @@
 						<h3 style="text-align:left;">Beautifully designed sites. </h3>
 						<br>
 						<p>
-			 				I would like to think my greatest assests in web development are my passion to learn new technologies, satisfaction from doing good work and stubborness when troubleshooting any obstacles.
+			 				I would like to think my greatest assets in web development are my passion to learn new technologies, satisfaction from doing good work and stubbornness when troubleshooting any obstacles.
 
 			 				<br><br>	
 
