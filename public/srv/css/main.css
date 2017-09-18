@@ -234,6 +234,8 @@ a:active {
   	align-items: center;
   	justify-content: center;
 
+  	margin-bottom: 100px;
+
 
 
  }
@@ -392,12 +394,7 @@ border-top: 60px solid white;
  }*/
 
 
-	h2 {
-		font-family:albori, "Book Antiqua", Palatino, serif;
-		font-size: 69px;
-		text-align: center;
-		color: black;
-	}
+
 
 
 
@@ -551,27 +548,52 @@ border-top: 60px solid white;
 	}
 
 	#about h2 {
-		font-family:albori, "Book Antiqua", Palatino, serif;
-		font-size: 69px;
-		text-align: center;
-		color: black;
+
+	text-align: left;
+  	font-family:quest, "Book Antiqua", Palatino, serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 9px;
+	color: #980f0f;
 	}
 
 	#about h3 {
 		font-family:albori, "Book Antiqua", Palatino, serif;
-		font-size: 30px;
-		text-align: center;
-		color:#741618;;
+		font-size: 25px;
+		text-align: left;
+		color:#353535;
+
 	}
 
-
+	h2 {
+		text-align: left;
+  	font-family:quest, "Book Antiqua", Palatino, serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 9px;
+	color: #980f0f;
+	}
 
 	h3 {
 
 		font-family:albori, "Book Antiqua", Palatino, serif;
-		font-size: 30px;
-		text-align: center;
-		color: #702424;
+		font-size: 25px;
+		text-align: left;
+		color:#353535;
+		
+		
+	}
+
+	h4 {
+
+		font-family:leno, "Book Antiqua", Palatino, serif;	
+		font-size: 20px;
+		line-height: 30px;
+		/*color: #426419;*/
+		color: #3960a3;
+		font-weight: 700;
+		margin:10px 0 10px 0;
+
 		
 		
 	}
@@ -586,22 +608,42 @@ border-top: 60px solid white;
 	}
 
 	p {
-		font-family:leno, "Book Antiqua", Palatino, serif;	
-		font-size: 20px;
+		font-family:albori, "Book Antiqua", Palatino, serif;
+		font-size: 19px;
 		line-height: 30px;
 		/*color: #426419;*/
 		color: black;
 
 	}
 
-	.firstparagraph {
-
-		font-size: 20px;
-		width: 75%;
-		margin:auto;
-		line-height: 30px;
-		text-align: center;
+	.icon_container {
+		/*display: flex;
+		justify-content: center;
+		align-content: center;*/
 		
+
+	}
+
+	.icon_wrapper {
+
+		margin-top: 75px;
+		margin-bottom: 75px;
+		/*margin-left:20px; 
+    	margin-right:20px;*/
+		width: 250px;
+		text-align: left;
+
+
+	}
+
+	.image_icon img {
+		width: 200px;
+		
+	}
+
+	.icon_descrip {
+
+
 	}
 
 

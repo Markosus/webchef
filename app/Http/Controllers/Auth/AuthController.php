@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use Illuminate\Http\Request;
+use App\Models\Employee;
+use App\Role;
 use Validator;
+use Eloquent;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-use Auth;
-
 
 class AuthController extends Controller
 {
@@ -40,10 +40,43 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
-
-        //$this->middleware('guest', ['except' => ['getLogout', 'create'] ]);
-
+        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+    }
+    
+    public function showRegistrationForm()
+    {
+        $roleCount = Role::count();
+		if($roleCount != 0) {
+			$userCount = User::count();
+			if($userCount == 0) {
+				return view('auth.register');
+			} else {
+				return redirect('login');
+			}
+		} else {
+			return view('errors.error', [
+				'title' => 'Migration not completed',
+				'message' => 'Please run command <code>php artisan db:seed</code> to generate required table data.',
+			]);
+		}
+    }
+    
+    public function showLoginForm()
+    {
+		$roleCount = Role::count();
+		if($roleCount != 0) {
+			$userCount = User::count();
+			if($userCount == 0) {
+				return redirect('register');
+			} else {
+				return view('auth.login');
+			}
+		} else {
+			return view('errors.error', [
+				'title' => 'Migration not completed',
+				'message' => 'Please run command <code>php artisan db:seed</code> to generate required table data.',
+			]);
+		}
     }
 
     /**
@@ -58,7 +91,6 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
-            'website' => 'required',
         ]);
     }
 
@@ -70,40 +102,36 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-       User::create([
+        // TODO: This is Not Standard. Need to find alternative
+        Eloquent::unguard();
+        
+        $employee = Employee::create([
+            'name' => $data['name'],
+            'designation' => "Super Admin",
+            'mobile' => "8888888888",
+            'mobile2' => "",
+            'email' => $data['email'],
+            'gender' => 'Male',
+            'dept' => "1",
+            'city' => "Pune",
+            'address' => "Karve nagar, Pune 411030",
+            'about' => "About user / biography",
+            'date_birth' => date("Y-m-d"),
+            'date_hire' => date("Y-m-d"),
+            'date_left' => date("Y-m-d"),
+            'salary_cur' => 0,
+        ]);
+        
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'location' =>$data['location'],
-            'telephone' => $data['telephone'],
             'password' => bcrypt($data['password']),
+            'context_id' => $employee->id,
+            'type' => "Employee",
         ]);
-
-// Auth::create(['name' => $request->name , 'email' => $request->email, 'password' => $request->password]);
-
-//     return redirect()->route('accounts')
-//         ->with('message', 'New user added successfully!')
-//         ->with('type', 'alert-success');
-
+        $role = Role::where('name', 'SUPER_ADMIN')->first();
+        $user->attachRole($role);
+    
+        return $user;
     }
-
-
-
-
-public function register(Request $request) //disables auto login
-{
-    $validator = $this->validator($request->all());
-
-    if ($validator->fails()) {
-        $this->throwValidationException(
-            $request, $validator
-        );
-    }
-
-    $this->create($request->all());
-
-    return redirect($this->redirectPath());
 }
-
-}
-
-

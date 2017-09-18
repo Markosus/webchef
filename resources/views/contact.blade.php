@@ -16,15 +16,14 @@
    				<br><br>
    				<br>
 
-   				<h2>contact</h2>	
-   				<br>
-   				<h3>Need a website? Get in touch with me. </h3>	<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">			
+   				<h2>Contact</h2>	
+   				<h3>Need a website? Get in touch with me. </h3>	<hr style="background-color: #e4eaf4; height: 1px; border: none;">		
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
-   				<p class="firstparagraph text-center">
+   				<p >
    					Please feel free to contact me if you have any questions. Thanks Ill get back to you as possible.
    				</p>
-   				
+   				<br><br>
    				
 				
    				

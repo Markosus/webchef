@@ -9,124 +9,108 @@
 
 	   			<div class="col-md-12">
 
+	   				<h2>Web Development Made Simple</h2>
+	   				<h3>What makes me unique with my apprach to web-design.</h3>
+	   				<hr style="background-color: #e4eaf4; height: 1px; border: none;">	
+					<br>
+	   				<p>I'm currently an independent, freelance web developer. I've been creating sites on and off for over 15 years now. My experience is both with front-end and back-end web development. I also enjoy jumping into graphic design here and there using Adobe Photoshop and Illustrator which complement the web design creation process. </p>
+   		
+	   				
+	   			</div> <!-- end col -->
+ 		
+
+ 		</div> <!-- end container -->
+
+		<div class="row">
+
+	   			<div class="col-md-3 pull-left" >
+
+		   			<div class="icon_wrapper">
+
+		   				<div class="image_icon">
+		   					<img src="{{URL::to('images/code_icon.svg')}}" alt="">
+		   				</div>
+		   				<div class="icon_descrip">
+		   					<h4>Coding</h4>
+		   					<p>
+		   						Using languagues and frameworks like <span style="font-weight: bold;">php</span>, <span style="font-weight: bold;">javascript</span>, <span style="font-weight: bold;">wordpress</span>, and <span style="font-weight: bold;">laravel</span> help me find the  suited tool for project.
+		   					</p>
+		   				</div>
+					</div>
 	   				
 
-	   				<br>
-	   				<br><br>
-	   				<br>
 
-	   				<h2>about</h2>	
-	   				<br>
-	   				<h3>My background and history in web development </h3>
-	   				<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">		
-	   				<!-- <h3 class="text-center">A little bit about myself</h3> -->
-	   				<br><br>
-	   				<p class="firstparagraph text-center">
-	   					I'm currently an independent, freelance web developer. I've been creating sites on and off for over 15 years now. My experience is both with front-end and back-end web development.  I dive into graphic design here and there using Adobe Photoshop and Illustrator which complement  the web design creation process.
-	   				</p>
+	   			</div>
 
-	   		<!-- 		@if (notify()->ready(0))
+	   			<div class="col-md-3">
+	   				<div class="icon_wrapper">
 
-	   						<div class="alert alert-{{ notify()->type() }}">
-	   							{{ notify()->message() }}
-	   						</div>
+		   				<div class="image_icon">
+		   					<img src="{{URL::to('images/portrait_icon.svg')}}" alt="">
+		   				</div>
+		   				<div class="icon_descrip">
+		   					<h4>Flexibility</h4>
+		   					<p>
+		   						All sites and projects I take on are progammed to be <span style="font-weight: bold;">responsive and flexible</span> with both desktop and mobile displays.
+		   					</p>
+		   				</div>
+					</div>
+	   			</div>
 
-	   				@endif -->
+	   			<div class="col-md-3 icon_container">
+	   				<div class="icon_wrapper">
+
+		   				<div class="image_icon">
+		   					<img src="{{URL::to('images/lightbulb_icon.svg')}}" alt="">
+		   				</div>
+		   				<div class="icon_descrip">
+		   					<h4>Innovation</h4>
+		   					<p>
+		   						I like to explore new <span style="font-weight: bold;">innovatove ideas</span> when it comes to either design or web applications.
+		   					</p>
+		   				</div>
+					</div>
+	   			</div>
+
+	   			<div class="col-md-3">
+	   				<div class="icon_wrapper">
+
+		   				<div class="image_icon">
+		   					<img src="{{URL::to('images/graphic_icon.svg')}}" alt="">
+		   				</div>
+		   				<div class="icon_descrip">
+		   					<h4>Graphic Design</h4>
+		   					<p>
+		   						I enjoy delving into areas of graphic design from time to time. Including logo design, and graphic manipulation in <span style="font-weight: bold;">Photoshop or Illustrator</span>.
+		   					</p>
+		   				</div>
+					</div>
+	   			</div>
+	   	</div> <!-- end row -->
+
+
+		<div class="row">
+
+	   			<div class="col-md-12">
+
+	   				<h2>My Biggest Assets</h2>
+	   				<h3>What makes me unique with my apprach to web-design.</h3>
+	   				<hr style="background-color: #e4eaf4; height: 1px; border: none;">	
+					<br>
+	   				<p>I would like to think my greatest assets in web development are my passion to learn new technologies, satisfaction from doing good work and stubbornness when troubleshooting any obstacles. I’ve had many of late night tackling stubborn problems head on.
+
+					Did you need any work done? Contact me.  </p>
+   		
 	   				
-	   				</div> <!-- end col -->
+	   			</div> <!-- end col -->
+ 		
 
-   					<div class="col-md-2"></div>
-		   			<div class="col-md-5 lightbulblist" >
-
-		   				<br>
-		   				<h3>Experience and Knowledge</h3>
-
-			 			<br> 
-		   					<table>
-			 					<tr>	
-			 					
-
-			 						<td>
-			 							<ul style="color:white;">
-
-						 					<li>Object Oriented PHP</li>
-						 					<li>Laravel Frame Work</li>
-						 					<li>Adobe Photoshop</li>
-						 					<li>Adobe Illustrator</li>
-						 					<li>MySQL</li>
-
-						 				</ul>
-			 						</td>
-
-									<td>
-										<ul style="color:white;">
-
-						 					<li>WordPress</li>
-						 					<li>Twitter Bootstrap</li>
-						 					<li>HTML5</li>
-						 					<li>JQuery</li>
-
-						 				</ul>
-						 			</td>	
-
-			 					</tr>
-			 					
-			 					
-			 				</table>
-		   			</div>
-
-
-			
-   			<div class="col-md-3 text-center" >
-   				<div class="lightbulb">
-   					<img  src="/images/test.svg">
-   				</div>
-   			</div>
-   			<div class="col-md-2"></div>
-   			
-   		
-   					
-
-				<div class="portrait">
-					<img  src="/images/portrait.png">
-
-					<div class="vcenter">
-						
-						<h3 style="text-align:left;">Beautifully designed sites. </h3>
-						<br>
-						<p>
-			 				I would like to think my greatest assets in web development are my passion to learn new technologies, satisfaction from doing good work and stubbornness when troubleshooting any obstacles.
-
-			 				<br><br>	
-
-			 				Did you need any work done? Contact me.
-		 				</p>
-		 			</div>
-				</div><!-- end portrait -->
-
-
-				
+ 		</div> <!-- end container -->
 
 
 
-   			
-
-
-
-
-
-   			
-		
-
-
-
-   			
-   		</div> <!-- end row -->
-
-   		
-
- 	</div> <!-- end container -->
- </div>
+ 	</div>
+</div>
 
 
 

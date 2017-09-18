@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\PageServiceProvider::class,
         Codecourse\Notify\NotifyServiceProvider::class,
+        Dwij\Laraadmin\LAProvider::class,
 
     ],
 
@@ -203,6 +204,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Notify' => Codecourse\Notify\Facades\Notify::class,
 
     ],
 

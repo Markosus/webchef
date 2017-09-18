@@ -16,13 +16,12 @@
    				<br><br>
    				<br>
 
-   				<h2>selected works</h2>	
-   				<br>
+   				<h2>Selected Works</h2>	
    				<h3>Some samples of my work. </h3>	
-   				<hr style="background-color: #741618; width: 30%; height: 1px; border: none;">		
+   				<hr style="background-color: #e4eaf4; height: 1px; border: none;">		
    				<!-- <h3 class="text-center">A little bit about myself</h3> -->
    				<br>
-   				<p class="firstparagraph text-center">
+   				<p >
    					Here are two of the more recent and live projects  I have on the go at the moment.  Im defintely looking to increase this in the future. Both of these sites were designed with Wordpress however Webchef.ca itself was created using the Laravel framework and with more of an effort to adhere to object oriented coding structure versus procedural coding. 
    				</p>
 

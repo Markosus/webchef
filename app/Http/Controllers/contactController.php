@@ -82,9 +82,9 @@ class contactController extends Controller
     	
     	//this is any data sent to the emaillayout view
 		 $data = array(
-       		'sitename' 	=> "WebChef.ca",
-       		'message'   => $request->message,
-       		'emailto'	=> 'mark2002david@hotmail.com',
+       	'sitename' 	=> "WebChef.ca",
+       	'message'   => $request->message,
+       	'emailto'	=> 'mark2002david@hotmail.com',
     		'emailfrom' => $request->email,
     		'Namefrom'	=> $request->name,
     		'subject'	=> 'WebChef contact form submission',

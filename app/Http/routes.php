@@ -30,39 +30,56 @@ Route::get('/portfoliograceful', function(){
 });
 
 
-Route::get('/login',function(){
+// Route::get('/login',function(){
 
-	return view('/auth.login');
+// 	return view('/auth.login');
 
-});
+// });
 
-Route::group(['middleware' =>['admin']],function(){ //admin user
+// Route::group(['middleware' =>['myadmin']],function(){ //admin user
 
-	Route::get('/register',function(){
+// 	Route::get('/register',function(){
 
-		return view('/auth.register');
+// 		return view('/auth.register');
 		
-	});
+// 	});
 
-	Route::get('/admin',['as' => 'adminpanel', 'uses'=>'admincontroller@showPanel']);
+// 	Route::get('/adminpanel',['as' => 'adminpanel', 'uses'=>'admincontroller@showPanel']);
 
-	Route::get('/viewaccounts', ['as' => 'viewaccounts', 'uses' => 'admincontroller@viewAccounts' ]);
+// 	Route::get('/viewaccounts', ['as' => 'viewaccounts', 'uses' => 'admincontroller@viewAccounts' ]);
 
-	Route::get('/user/{id}', ['as' => 'profile', 'uses' => 'admincontroller@viewClient']); 
+// 	Route::get('/user/{id}', ['as' => 'profile', 'uses' => 'admincontroller@viewClient']); 
 
-});
+// });
 
 Route::group(['middleware' => ['auth']], function(){  //regular user 
 
 	// route::get('logout', ['as' => 'logout', 'uses' => ])
 	route::get('areyouloggedin',function(){
 
-		echo "You are a regular user";
+		echo "You are an authenticated user";
 
 	});
 });
+
+Route::get('/register2',function(){
+
+		return view('/auth.register');
+		
+	});
+
+Route::get('game', function(){
+	return view('game.gameindex');
+});
+
+
+
+
 
 // Route::get('/notify',function(){  this is taken care of in the contact controller
 // 	notify()->flash("Good job!", "success");
 // 	return redirect('/');
 // });
+/* ================== Homepage + Admin Routes ================== */
+
+require __DIR__.'/admin_routes.php';

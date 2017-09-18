@@ -1,10 +1,18 @@
 <?php
+/**
+ * Controller genrated using LaraAdmin
+ * Help: http://laraadmin.com
+ */
 
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
+/**
+ * Class HomeController
+ * @package App\Http\Controllers
+ */
 class HomeController extends Controller
 {
     /**
@@ -13,19 +21,27 @@ class HomeController extends Controller
      * @return void
      */
     public function __construct()
-
     {
-        //this will make it so the homecontroller needs to be authenticated
-        //$this->middleware('auth');
+        
     }
 
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
-        return view('index');
+        $roleCount = \App\Role::count();
+		if($roleCount != 0) {
+			if($roleCount != 0) {
+				return view('index');
+			}
+		} else {
+			return view('errors.error', [
+				'title' => 'Migration not completed',
+				'message' => 'Please run command <code>php artisan db:seed</code> to generate required table data.',
+			]);
+		}
     }
 }
