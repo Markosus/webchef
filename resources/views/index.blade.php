@@ -13,7 +13,7 @@
 	   				<h3>What makes me unique with my apprach to web-design.</h3>
 	   				<hr style="background-color: #e4eaf4; height: 1px; border: none;">	
 					<br>
-	   				<p>I'm currently an independent, freelance web developer. I've been creating sites on and off for over 15 years now. My experience is both with front-end and back-end web development. I also enjoy jumping into graphic design here and there using Adobe Photoshop and Illustrator which complement the web design creation process. </p>
+	   				<p>I'm currently an independent, freelance web developer. I've been creating sites on and off for over 15 years now. My experience is both with front-end and back-end web development. I also enjoy jumping into graphic design here and there using Adobe Photoshop/ Illustrator and experimenting with diffent design techniques.  </p>
    		
 	   				
 	   			</div> <!-- end col -->
@@ -21,9 +21,17 @@
 
  		</div> <!-- end container -->
 
+ 		<!-- 		@if (notify()->ready(0))
+
+	   						<div class="alert alert-{{ notify()->type() }}">
+	   							{{ notify()->message() }}
+	   						</div>
+
+	   				@endif -->
+
 		<div class="row">
 
-	   			<div class="col-md-3 pull-left" >
+	   			<div class="col-md-3" >
 
 		   			<div class="icon_wrapper">
 
@@ -94,11 +102,11 @@
 	   			<div class="col-md-12">
 
 	   				<h2>My Biggest Assets</h2>
-	   				<h3>What makes me unique with my apprach to web-design.</h3>
+	   				<h3>My competitive advantage compared to others.</h3>
 	   				<hr style="background-color: #e4eaf4; height: 1px; border: none;">	
 					<br>
-	   				<p>I would like to think my greatest assets in web development are my passion to learn new technologies, satisfaction from doing good work and stubbornness when troubleshooting any obstacles. I’ve had many of late night tackling stubborn problems head on.
-
+	   				<p>I would like to think my greatest assets in web development are my passion to learn new technologies, satisfaction from doing good work and stubbornness when troubleshooting any obstacles. I’ve had many of late nights tackling stubborn problems, however knowing when to look for a helping hand or advice can be invaluable.  
+					<br><br>
 					Did you need any work done? Contact me.  </p>
    		
 	   				

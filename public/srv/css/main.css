@@ -761,6 +761,34 @@ border-top: 60px solid white;
 	/*background: url('/images/pattern2.png') repeat; */
 }
 
+
+@media (max-width: 1000px) {
+    .icon_container {
+		/*display: flex;
+		justify-content: center;
+		align-content: center;*/
+		
+
+	}
+
+	.icon_wrapper {
+
+		width: 100%;
+		text-align: center;
+	}
+
+	.icon_wrapper p {
+
+		width: 250px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	
+}
+
 /* ------------------------------end Pages --------------------*/
 
 
