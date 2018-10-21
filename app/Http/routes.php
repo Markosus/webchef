@@ -1,4 +1,6 @@
+
 <?php
+
 
 // Route::get('/', function () {
 //     return view('index');
@@ -30,6 +32,16 @@ Route::get('/portfoliograceful', function(){
 });
 
 
+
+Route::get('/generate', [
+    'uses' => 'templateController@index'
+  ]);
+
+Route::get('/generate/build', [
+    'uses' => 'templateController@build'
+  ]);
+
+
 // Route::get('/login',function(){
 
 // 	return view('/auth.login');
@@ -52,6 +64,7 @@ Route::get('/portfoliograceful', function(){
 
 // });
 
+//this authentication should be seperate from the admin auth area.
 Route::group(['middleware' => ['auth']], function(){  //regular user 
 
 	// route::get('logout', ['as' => 'logout', 'uses' => ])

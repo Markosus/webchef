@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request;
 /* ================== Homepage ================== */
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
@@ -73,9 +73,10 @@ Route::group(['as' => $as, 'middleware' =>['myadmin']],function(){
 	Route::get(config('laraadmin.adminRoute') . '/client_dt_ajax', 'LA\ClientsController@dtajax');
 
 
-	Route::get('/admin/mark',function(){
-		echo "string";		
-	});
+	Route::get('/admin/stripe','stripecontroller@index');
+
+	Route::post('/admin/stripe','stripecontroller@store');
+
 
 
 });
