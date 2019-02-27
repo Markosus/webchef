@@ -69,17 +69,17 @@
    				<div class="centerform">
 
 	   				<br>
-					<form action="/contact" method="POST">
+					<form action="" method="POST" id="contact-form">
 
 					<div class="block">
 						<label for="name">Name:
 						<input type="text" name="name" value="{{ old('name') }}"></label>
 					</div>
 
-					
-
-					
-					
+					<div class="block phone">
+							<label for="message">Phone Number:
+							<input type="text" name="phone" value="" autocomplete="off" placeholder="Enter your phone here"></label>		
+					</div>					
 					<div class="block">
 						<label for="name">Email:
 						<input type="text" name="email" value="{{ old('email') }}"></label>
@@ -95,10 +95,10 @@
 
 					
 
-					<div class="block">
+					<!-- <div class="block">
 						<label for="question">Question: {{ $question }} =
 						<input type="text" name="questioninput"></label>
-					</div>	
+					</div>	 -->
 					
 
 					<div class="block">
@@ -106,7 +106,7 @@
 						<button type="submit" name="submit" value="Send" class="btn btn-default">Send</button>
 					</div>
 
-					<input type="hidden" name="question" value="{{ $question }}">
+					<!-- <input type="hidden" name="question" value="{{ $question }}"> -->
 					<input type="hidden" name="_token" value="{{csrf_token()}}">
 
 				</form>

@@ -39,18 +39,23 @@ class contactController extends Controller
     public function isValid(Request $request){
 
 									
-		eval( '$result = (' . $request->question . ');' );
+		// eval( '$result = (' . $request->question . ');' );
 
 		
     	$validator =  Validator::make($request->all(),Contact::$rules);
     	$this->messages = $validator->errors();
 
-    	if ($result != intval($request->questioninput)){
- 			
-					
-   			$this->messages->add('Captcha Question','Incorrect Captcha'); 
-										
-		}
+    // 	if ($result != intval($request->questioninput)){				
+   	// 		$this->messages->add('Captcha Question','Incorrect Captcha'); 
+	  //  }
+
+       //Honeypot
+    if (!empty($request->phone)) {
+      // die('spambot');
+      return Redirect::to('/')->send();
+      # treat as spambot
+      //log spam bot 
+    }  
 
 
 
